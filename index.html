@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="/assets/fontawesome-free-6.4.0-web/css/all.css"
+    />
+    <!-- style css -->
+    <link rel="stylesheet" href="/css/index.css" />
+    <title>Company Profile</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navigation">
+      <a href="index.html" id="logo">
+        <img class="logo" src="/img/logo.png" alt="logo" />
+      </a>
+
+      <div class="nav-menu">
+        <a href="home">Home</a>
+        <a href="#profile">Our Profile</a>
+        <a href="#portofolio">Portofolio</a>
+        <a href="#message-us">Message Us</a>
+      </div>
+    </nav>
+
+    <section class="container" id="home">
+      <!-- konten image -->
+      <div class="image">
+        <a href="#" class="call"></a>
+        <p>Ini adalah website latihan pertama</p>
+      </div>
+
+      <!-- headquarter -->
+      <div class="headquarter">
+        <div class="headquarter-title">
+          <h1>Our Headquarter</h1>
+        </div>
+
+        <div class="content">
+          <div class="regional">
+            <div class="circle">
+              <i class="fa-solid fa-city"></i>
+            </div>
+            <div class="city">
+              <p>Jakarta</p>
+            </div>
+          </div>
+          <div class="regional">
+            <div class="circle">
+              <i class="fa-solid fa-city"></i>
+            </div>
+            <div class="city">
+              <p>Bandung</p>
+            </div>
+          </div>
+          <div class="regional">
+            <div class="circle">
+              <i class="fa-solid fa-city"></i>
+            </div>
+            <div class="city">
+              <p>Surabaya</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- message us -->
+      <div class="form">
+        <div class="form-header">
+          <h1>Message Us</h1>
+        </div>
+
+        <form class="form-message" id="form-message">
+          <div class="form-input">
+            <div class="form-control">
+              <label>Nama :</label>
+              <input type="text" placeholder="Nama" id="nama" />
+              <i class="fas fa-circle-check"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+              <label>Tanggal Lahir </label>
+              <input type="date" placeholder="" id="tanggal-lahir" />
+            </div>
+
+            <div class="form-control">
+              <label>Jenis Kelamin :</label>
+              <input
+                type="radio"
+                name="jenis-kelamin"
+                value="laki-laki"
+                id="jenis-kelamin"
+              />Laki-laki
+              <input
+                type="radio"
+                name="jenis-kelamin"
+                value="perempuan"
+                id="jenis-kelamin"
+              />Perempuan <br />
+              <i class="fas fa-circle-check"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+              <label>Pesan :</label>
+              <textarea
+                name="pesan-input"
+                placeholder="Pesan"
+                id="pesan-input"
+                rows="5"
+              ></textarea>
+              <i class="fas fa-circle-check"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+            <button>Submit</button>
+          </div>
+
+          <div class="form-output">
+            <textarea
+              name="pesan-output"
+              id="pesan-output"
+              placeholder="Pesan"
+              id="pesan-input"
+              rows="10"
+              cols="30"
+            ></textarea>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="/js/script.js"></script>
+  </body>
+  <footer>copyright</footer>
+</html>
