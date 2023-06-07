@@ -1,0 +1,220 @@
+:root {
+  --pri: #fff;
+  --sec: #010101;
+  --bg: #fffb00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* navigation */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  padding: 0.5rem 7%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navigation .nav-menu a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0 0.8rem;
+}
+
+.navigation .nav-menu a:hover {
+  color: #fffb00;
+}
+
+.navigation .nav-menu a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.1rem solid #fffb00;
+  transform: scalex(0);
+  transition: 0.2s linear;
+}
+
+.navigation .nav-menu a:hover::after {
+  transform: scaleX(1);
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* .container {
+  align-items: center;
+  padding: 0.5rem 7%;
+} */
+
+/* konten image */
+.image {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background-image: url(/img/study-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+/* headquarter */
+h1 {
+  padding-left: 10em;
+}
+
+.headquarter {
+  background-color: var(--bg);
+  align-items: center;
+}
+
+.headquarter-title {
+  padding: 1em 0 1em 0;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  padding: 2.5em;
+}
+
+.regional {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+}
+
+.circle {
+  text-align: center;
+  padding: 10vh;
+  margin: 0 10vh 0 10vh;
+  border-radius: 50%;
+  border: 1px solid #010101;
+  background-color: #fff;
+}
+
+/* form */
+.form-header {
+  padding: 1em 0 1em 0;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 1px solid gray;
+  border-radius: 4px;
+  display: block;
+  justify-content: space-between;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 0.5em;
+  width: 100%;
+}
+
+.form-control small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form-control textarea {
+  resize: none;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 0.5em;
+}
+
+.form-input {
+  margin: 2em 1.5em;
+  width: 25%;
+}
+
+.form-output {
+  display: flex;
+  margin: 5em 1.5em;
+  width: 25%;
+}
+.form-output textarea {
+  padding: 0.5em;
+}
+
+input#jenis-kelamin {
+  display: inline-block;
+  width: 20%;
+  margin-left: -1.5em;
+  margin-right: -1em;
+}
+
+.form-control i {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control.success input {
+  border-color: green;
+}
+
+.form-control.error input {
+  border-color: red;
+}
+
+.form-control.success i.fa-circle-check {
+  color: green;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: red;
+  visibility: visible;
+}
+
+.form-control.error small {
+  color: red;
+  visibility: visible;
+}
+
+.form-message {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: #a1a1a1;
+  border: 2px solid #a1a1a1;
+  border-radius: 4px;
+  color: #010101;
+  display: block;
+  position: relative;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin: 5px;
+  width: 100%;
+}
